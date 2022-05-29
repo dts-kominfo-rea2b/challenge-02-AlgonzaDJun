@@ -37,7 +37,7 @@ function lakukanLooping(arrPegawai) {
   let jumlahPria = 0;
 
   for (let i = 0; i < a.length; i++) {
-    if ((a[i]["jenisKelamin"] = "M")) jumlahPria += 1;
+    if ((a[i]["jenisKelamin"] == "M")) jumlahPria += 1;
   }
   console.log(jumlahPria);
 
@@ -47,7 +47,7 @@ function lakukanLooping(arrPegawai) {
   */
   let jumlahWanita = 0;
   for (let i = 0; i < a.length; i++) {
-    if ((a[i]["jenisKelamin"] = "F")) jumlahWanita += 1;
+    if ((a[i]["jenisKelamin"] == "F")) jumlahWanita += 1;
   }
   console.log(jumlahWanita);
 
@@ -88,6 +88,7 @@ function main(data) {
   console.log(hasil.hasilLooping);
   console.log(hasil.jumlahPria);
   console.log(hasil.jumlahWanita);
+  
 
   return hasil;
 }
